@@ -1,0 +1,101 @@
+baseURL: "https://subhamadhikari.github.io/"
+title: Subham Adhikari
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - $$
+              - $$
+            - - \[
+              - \]
+          inline:
+            - - $
+              - $
+            - - \(
+              - \)
+
+minify:
+  minifyOutput: true
+
+params:
+  env: production
+  title: SUBHAM ADK
+  description: "Portfolio site of Subham Adhikari."
+  author: Subham Adhikari
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  UseHugoToc: true
+
+  math: true
+
+  label:
+    text: "SUBHAM ADHIKARI"
+    icon: /images/terminal.png
+    iconHeight: 28
+
+  profileMode:
+    enabled: true # Change this to true
+    title: "53 75 62 68 61 6D 41 44 4B"
+    subtitle: |
+      **Maths & AI Enthusiast | AI Engineer @ HuSig**
+        
+        Namaste, welcome to my space.
+    imageUrl: /images/pp.jpg # Add leading slash
+    imageWidth: 200
+    imageHeight: 200
+
+  # homeInfoParams:
+  #   Title: "Hi there 👋"
+  #   Content: |
+  #     **Software Engineer | AI Enthusiast | Open Source Contributor**
+
+  #     Welcome to my corner of the internet. I build things, explore ideas, and share what I learn along the way.
+
+  #     Currently working on machine learning projects and writing about paper reviews, side projects, and technical notes.
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/subhamadhikari/"
+    - name: github
+      url: "https://github.com/subhamadhikari"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+menu:
+  main:
+    - identifier: paper reviews
+      name: Paper Review
+      url: /paper-review/
+      weight: 10
+    # - identifier: projects
+    #   name: Projects
+    #   url: /projects/
+    #   weight: 20
+    # - identifier: notes
+    #   name: Notes
+    #   url: /notes/
+    #   weight: 30
+
+# markup:
+#   highlight:
+#     noClasses: false
