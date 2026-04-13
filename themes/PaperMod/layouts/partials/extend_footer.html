@@ -1,3 +1,86 @@
-{{- /* Footer custom content area start */ -}}
-{{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
-{{- /* Footer custom content area end */ -}}
+{{- /* Footer custom content area start */ -}} {{- /* Insert any custom code
+web-analytics, resources, etc. here */ -}} {{- /* Footer custom content area end
+*/ -}} {{- /* Custom JS - Easter Egg */ -}}
+<script>
+  // Easter Egg: Press Ctrl+I to play music
+  let audioPlayer;
+  let isPlaying = false;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Easter egg script loaded! Press Ctrl+I");
+
+    // Create audio element
+    audioPlayer = new Audio("/audio/music.mp3");
+    audioPlayer.loop = true;
+    audioPlayer.volume = 0.3;
+
+    audioPlayer.addEventListener("error", function () {
+      console.error("Audio file not found! Check: /audio/music.mp3");
+    });
+
+    // Listen for Ctrl+I
+    document.addEventListener("keydown", function (e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "i") {
+        e.preventDefault();
+        console.log("Ctrl+I pressed!");
+        triggerEasterEgg();
+      }
+    });
+  });
+
+  function triggerEasterEgg() {
+    if (!isPlaying) {
+      audioPlayer
+        .play()
+        .then(() => {
+          console.log("Music playing!");
+          isPlaying = true;
+          showNotification("🎵 Lo-fi mode activated • Press Ctrl+I to stop");
+          document.body.classList.add("lofi-mode");
+          createMusicControl();
+        })
+        .catch((err) => {
+          console.error("Play failed:", err);
+          showNotification("❌ Could not play audio");
+        });
+    } else {
+      audioPlayer.pause();
+      audioPlayer.currentTime = 0;
+      isPlaying = false;
+      document.body.classList.remove("lofi-mode");
+      removeNotification();
+      console.log("Music stopped!");
+    }
+  }
+
+  function showNotification(message) {
+    const existing = document.querySelector(".easter-egg-notification");
+    if (existing) existing.remove();
+
+    const notification = document.createElement("div");
+    notification.className = "easter-egg-notification";
+    notification.textContent = message;
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+      notification.style.opacity = "0";
+      setTimeout(() => notification.remove(), 300);
+    }, 3000);
+  }
+
+  function createMusicControl() {
+    const existing = document.querySelector(".music-control");
+    if (existing) existing.remove();
+
+    const control = document.createElement("div");
+    control.className = "music-control";
+    control.innerHTML = "🎵 <span>Playing • Ctrl+I to stop</span>";
+    control.onclick = triggerEasterEgg;
+    document.body.appendChild(control);
+  }
+
+  function removeNotification() {
+    const control = document.querySelector(".music-control");
+    if (control) control.remove();
+  }
+</script>

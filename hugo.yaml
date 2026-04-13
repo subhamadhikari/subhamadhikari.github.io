@@ -46,6 +46,17 @@ params:
 
   math: true
 
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+
+  # Add custom CSS and JS here
+  customCSS:
+    - css/extended/easter-egg.css
+
+  customJS:
+    - js/easter-egg.js
+
   label:
     text: "SUBHAM ADHIKARI"
     icon: /images/terminal.png

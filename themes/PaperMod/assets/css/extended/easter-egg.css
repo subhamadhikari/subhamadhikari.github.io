@@ -1,0 +1,48 @@
+/* Easter egg notification */
+.easter-egg-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--theme);
+  color: var(--primary);
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  animation: slideIn 0.3s ease;
+  transition: opacity 0.3s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Floating music control */
+.music-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--theme);
+  color: var(--primary);
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transition: transform 0.2s;
+}
+
+.music-control:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: subtle background effect when active */
+body.lofi-mode {
+  /* You can add subtle visual changes */
+  /* filter: brightness(0.95); */
+}
