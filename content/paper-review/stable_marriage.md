@@ -290,7 +290,7 @@ The algorithm's asymmetry raises equity questions:
 
 ---
 
-## 9. Worked Example: Complete Algorithm Trace
+## 8. Worked Example: Complete Algorithm Trace
 
 Let's trace through the algorithm on the 4-person example requiring 10 iterations (mentioned in the paper):
 
@@ -344,7 +344,7 @@ This continues for several more rounds until convergence. The final stable match
 
 ---
 
-## 10. Connection to Other Fields
+## 9. Connection to Other Fields
 
 ### Game Theory
 
@@ -366,7 +366,7 @@ This continues for several more rounds until convergence. The final stable match
 
 ---
 
-## 11. Conclusion
+## 10. Conclusion
 
 ### Summary of Contributions
 
@@ -382,19 +382,9 @@ This continues for several more rounds until convergence. The final stable match
 
 This 7-page paper, written in accessible English with minimal mathematical notation, founded an entire field. Its ideas have:
 
-- Generated thousands of research papers
 - Enabled practical market design saving lives (kidney exchange)
 - Improved outcomes for millions (school choice, residency matching)
 - Earned a Nobel Prize 50 years later
-
-### Why It Matters Today
-
-In an age of online platforms and marketplace design, the principles from this 1962 paper remain foundational:
-
-- Airbnb, Uber, and other platforms face two-sided matching problems
-- Online dating uses matching algorithms
-- Resource allocation in cloud computing
-- Peer-to-peer networks
 
 ### Final Assessment
 
@@ -404,8 +394,6 @@ In an age of online platforms and marketplace design, the principles from this 1
 - Solves them with simple, implementable algorithms
 - Provides deep theoretical insights
 - Opens entire new research directions
-
-**Rating: 10/10** - A timeless classic that deserves its place among the most influential papers in mathematics, economics, and computer science.
 
 ---
 
