@@ -380,15 +380,13 @@ This continues for several more rounds until convergence. The final stable match
 
 ### Historical Significance
 
-This 7-page paper, written in accessible English with minimal mathematical notation, founded an entire field. Its ideas have:
+This 7-page paper, written with minimal mathematical notation, founded an entire field. Its ideas have:
 
 - Enabled practical market design saving lives (kidney exchange)
 - Improved outcomes for millions (school choice, residency matching)
 - Earned a Nobel Prize 50 years later
 
-### Final Assessment
-
-**Elegant simplicity meets profound depth.** The paper exemplifies the best of mathematical research:
+The paper exemplifies the best of mathematical research:
 
 - Motivated by practical problems
 - Solves them with simple, implementable algorithms
