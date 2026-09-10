@@ -1,7 +1,7 @@
 ---
 title: "Transactional Outbox"
 date: 2026-06-22
-draft: false
+draft: true
 math: true
 description: "Notes on designing distributed service."
 tags: ["software engineering", "system design", "Computer Science"]

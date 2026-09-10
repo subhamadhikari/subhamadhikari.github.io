@@ -1,4 +1,12 @@
-# Leonhard Euler's Integral: A Historical Profile of the Gamma Function
+---
+title: "Leonhard Euler's Integral: A Historical Profile of the Gamma Function"
+date: 2026-07-12
+draft: false
+author: "Subham Adhikari"
+tags: ["integral", "gamma function", "mathematics"]
+math: true
+weight: 1
+---
 
 ## 1. The Interpolation Problem and the Birth of the Function
 
